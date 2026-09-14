@@ -2,6 +2,7 @@ import "./login.css";
 import MyButton from "@/components/Button/Button";
 import Myinput from "@/components/Input/Input";
 import ButtonLogin from "@/components/ButtonLogin/Buttonlogin";
+import OnOffButton from "@/components/OnOffButton/OnOffButton";
 
 export default function LoginPage() {
     return (
@@ -18,7 +19,7 @@ export default function LoginPage() {
                 <Myinput type="password" placeholder="Use ao menos 8 carecteres" />
 
                 <span>Esqueceu a senha?</span>
-                <MyButton>Acessar</MyButton>
+                <OnOffButton></OnOffButton>
             </div>
 
             <p>----------------- ou -----------------</p>

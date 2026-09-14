@@ -5,8 +5,11 @@ type Inputprops = {
     type: "text" | "password"
 };
 
-export default function MyInput ({ placeholder }: Inputprops) {
+export default function MyInput ({ placeholder, type }: Inputprops) {
     return (
-        <input className="inputbox" placeholder={placeholder} />
+        <input 
+        className="inputbox" 
+        placeholder={placeholder} 
+        type={type}/>
     );
 }

@@ -1,0 +1,24 @@
+.formSenha {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.formSenha input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.formSenha button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.erro {
+    color: red;
+}
+
+.sucesso {
+    color: green;
+}

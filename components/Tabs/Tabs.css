@@ -1,0 +1,22 @@
+.tabs {
+    width: 600px;
+}
+
+.tabBotoes {
+    display: flex;
+}
+
+.tabBotoes button {
+    padding: 15px 25px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.tabConteudo {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.tabConteudo h3 {
+    margin-top: 0;
+}
