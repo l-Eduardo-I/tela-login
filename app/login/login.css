@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    margin: 10% auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2 {
+    font-size: medium;
+}
+
+.forms p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    margin: 5px 0px 0px;
+
+}
+
+.forms span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    color: blue;
+    font-family: 'Nunito', sans-serif;
+}
+
+.forms span:hover {
+    text-decoration: underline;
+}
