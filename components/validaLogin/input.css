@@ -1,0 +1,42 @@
+.LoginContainer {
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+}
+
+.button {
+    width: 120px;
+    height: 25px;
+    border-radius: 4px;
+    border: none;
+    background: rgb(17, 82, 202);
+    font-size: 16px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+    margin: 5px;
+}   
+
+.button:hover {
+    cursor: pointer;
+    background: rgb(20, 17, 202);
+}
+
+.erro {
+    color: rgb(133, 0, 0);
+    opacity: 0;
+    animation: fadeOut 3s forwards;
+}
+@keyframes fadeOut{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; 
+    }
+}

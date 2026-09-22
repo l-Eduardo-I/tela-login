@@ -14,22 +14,14 @@
 
 .container h2 {
     font-size: medium;
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
 
-.forms p {
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-    margin: 5px 0px 0px;
 
-}
-
-.forms span {
+.recSenha {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
     color: blue;
     font-family: 'Nunito', sans-serif;
-}
-
-.forms span:hover {
-    text-decoration: underline;
 }

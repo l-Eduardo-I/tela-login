@@ -1,10 +1,10 @@
-.button {
-    width: 120px;
-    height: 30px;
+.ButtonLogin {
+    width: 100px;
+    height: 20px;
     border-radius: 4px;
     border: none;
-    background: rgb(17, 82, 202);
-    font-size: medium;
+    background: rgb(123, 134, 155);
+    font-size: 16px;
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
     margin: 10px;
