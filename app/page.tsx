@@ -1,6 +1,6 @@
 import "./login.css";
 import Validalogin from "@/components/validaLogin/input";
-import LogarComo from "@/components/LogarComo/Button";
+// import LogarComo from "@/components/LogarComo/Button";
 
 export default function LoginPage() {
     return (
@@ -18,9 +18,9 @@ export default function LoginPage() {
 
             <p>----------------- ou -----------------</p>
 
-            <samp>Não tem conta? <a href="#">Registre-se grátis</a></samp>
+            <samp>Não tem conta? <a href="./Registra">Registre-se grátis</a></samp>
 
-            <LogarComo />
+            
 
         </div>
     )

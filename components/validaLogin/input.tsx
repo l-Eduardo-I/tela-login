@@ -22,13 +22,12 @@ export default function Myinput() {
             setSucesso(false);
         }
 
-
         const novoUsers = {
-            usur: {usuario},
-            password: {senha},
+            usur: { usuario },
+            password: { senha },
             dateAdd: {
                 dia: new Date().getDate(),
-                mes: new Date().getMonth() +1,
+                mes: new Date().getMonth() + 1,
                 ano: new Date().getFullYear(),
             }
         }
@@ -36,15 +35,15 @@ export default function Myinput() {
     }
     return (
         <div className="LoginContainer">
-            <input 
-            type="text"
-            placeholder="Digite seu usuário"
-            value={usuario}
-            onChange={(event) => setUsuario(event.target.value)}  
+            <input
+                type="text"
+                placeholder="Digite seu usuário"
+                value={usuario}
+                onChange={(event) => setUsuario(event.target.value)}
             />
 
-            <input 
-                type="password" 
+            <input
+                type="password"
                 placeholder="Digite sua senha"
                 value={senha}
                 onChange={(event) => setSenha(event.target.value)}
@@ -54,14 +53,9 @@ export default function Myinput() {
                 Acessar
             </button>
 
-            <p className={sucesso ? "sucesso" : "erro"}>
+            <p className={ mensagem ? (sucesso ? "sucesso" : "erro") : ""}>
                 {mensagem}
             </p>
-
-
-        </div>
-
-
-
+        </div> 
     );
 }

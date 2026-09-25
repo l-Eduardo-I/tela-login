@@ -1,7 +1,7 @@
 .LoginContainer {
     display: flex;
     flex-direction:column;
-    gap: 5px;
+    gap: 15px;
     width: 100%;
     align-items: center;
 }
@@ -25,10 +25,10 @@
 
 .erro {
     color: rgb(133, 0, 0);
-    opacity: 0;
-    animation: fadeOut 3s forwards;
+    animation: fade 3s forwards;
 }
-@keyframes fadeOut{
+
+@keyframes fade{
     0% {
         opacity: 0;
     }
