@@ -44,14 +44,10 @@ export default function RegistroDeLogin() {
             return;
         } 
 
-        //const usuarioExistente = usuarios.some(
-        //    (usuario) => usuario.user === user
-        //);
-
         //Se passar pelos filtros o usuário é cadastrado.
         setAlert("Sucesso!");
 
-        //Const que está armazenado os dados de login em formato de Objeto. 
+        //Const que está armazenado os dados de login em formato de Objeto. Opção temporaria, pq quando o logi e feito a function reinicia e os dados são perdidos.
         const novoUsuarios = {
             email,
             user,
@@ -108,10 +104,6 @@ export default function RegistroDeLogin() {
                 {alert}
             </p>
 
-
         </div>
-
-
-
     );
 }
