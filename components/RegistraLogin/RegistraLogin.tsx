@@ -5,13 +5,17 @@ import "./Registralogin.css";
 
 export default function RegistroDeLogin() {
 
+    //Declaração de variaveis 
     const [email, setEmail] = useState("");
     const [user, setUser] = useState("");
     const [senha, setSenha] = useState("");
     const [confirmaSenha, setConfirmaSenha] = useState("");
     const [alert, setAlert] = useState("");
     const [validation, setValidation] = useState(false);
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const [usuarios, serUsuarios] = useState([]);
 
+    //Função que valida Login
     function validalogin() {
         if (email.trim() === "" ||
             user.trim() === "" ||
@@ -24,6 +28,13 @@ export default function RegistroDeLogin() {
             return;
         }
 
+        //Verifica se o Email atende os requisitos 
+        if (!emailValido.test(email)) {
+            setAlert("Digite um email Valido.")
+            return;
+        }
+
+        //Verifica se a senha é igual a confirmação.
         if (senha !== confirmaSenha) {
             setAlert("As senhas devem ser iguais");
             setEmail("");
@@ -31,10 +42,17 @@ export default function RegistroDeLogin() {
             setSenha("");
             setConfirmaSenha("");
             return;
-        }  
+        } 
+
+        //const usuarioExistente = usuarios.some(
+        //    (usuario) => usuario.user === user
+        //);
+
+        //Se passar pelos filtros o usuário é cadastrado.
         setAlert("Sucesso!");
 
-        const usuarios = {
+        //Const que está armazenado os dados de login em formato de Objeto. 
+        const novoUsuarios = {
             email,
             user,
             senha,
@@ -47,7 +65,7 @@ export default function RegistroDeLogin() {
                 hora: new Date().getHours(),
             }
         }
-        console.log(usuarios);
+        console.log(novoUsuarios);
 
     }
     return (
