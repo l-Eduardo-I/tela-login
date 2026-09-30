@@ -13,7 +13,7 @@ export default function RegistroDeLogin() {
     const [alert, setAlert] = useState("");
     const [validation, setValidation] = useState(false);
     const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const [usuarios, serUsuarios] = useState([]);
+    const [usuarios, setUsuarios] = useState([]);
 
     //Função que valida Login
     function validalogin() {
